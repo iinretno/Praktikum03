@@ -2,9 +2,9 @@ package pbo1.praktikum03;
 
 
 public class Sepeda {
-    private String merk;
-    private String warna;
-    private Double harga;
+    String merk;
+    String warna;
+    Double harga;
     
     void cetakInfo(){
         System.out.println("Merk \t: "+merk+"\n"+
