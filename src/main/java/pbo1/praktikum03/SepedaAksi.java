@@ -6,7 +6,7 @@ public class SepedaAksi {
         s.setMerk("Butterfly");
         s.setWarna("Merah");
         s.setHarga(1000);
-        
+        //gak bisa s.setJenisMotor("Listrik");
         s.cetakInfo();
         
         System.out.print("Merknya \t: ");
@@ -16,5 +16,13 @@ public class SepedaAksi {
         System.out.print("Harganya \t: ");
         System.out.println(s.getHarga());
         
+        SepedaMotor sm = new SepedaMotor();
+        sm.setMerk("hamaya");
+        sm.setWarna("Hitam");
+        sm.setHarga(10000);
+        sm.setJenisMotor("Listrik");
+        sm.cetakInfo();
+        System.out.println("Jenis \t:"+sm.getJenisMotor());
+        sm.throttle();
     }
 }
